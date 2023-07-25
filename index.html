@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop v1.0</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+
+    <!-- Flags of the world-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header id="mainBar" class="row">
+            <div id="mainLogo" class="col-sm-3">
+                <!--<img src="img/logo.png" id="headerLogo">&nbsp;&nbsp;--><span id="mainTitle">The BRONX</span>
+            </div>
+            <nav id="mainNav" class="col-sm-9">
+                <ul>
+                    <li class="navItem"><a href="#myaccount" data-toggle="tooltip" title="My Account"><i
+                                id="accountIcon" class="fa-solid fa-user"></i></a></li>
+                    <li class="navItem"><a href="#cart" data-toggle="tooltip" title="Cart"><i id="cartIcon"
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    <li>
+                </ul>
+            </nav>
+        </header>
+        <!--
+        ----Slider con promos y novedades----
+        <section id="hero" class="row center-block">
+            <div class="col-sm-12">
+                <h1>aca va slider</h1>
+            </div>
+        </section>
+        -->
+        <!--This is the main section, where product are imported from some DB and displayed by JS -->
+        <p class="breadcrumb">/ Shop</p>
+        <section id="mainGrid" class="row center-block">
+            <div id="gridView"></div>
+        </section>
+
+        <section>
+            <button id="coffeeSubBtn">COFFEE SUBSCRIPTION</button>
+        </section>
+
+        <section id="footer">
+            <h6 class="footerText">The Bronx Coffee ® 2023</h6>
+        </section>
+    </div>
+
+</body>
+
+</html>

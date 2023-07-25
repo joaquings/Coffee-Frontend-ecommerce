@@ -1,0 +1,163 @@
+/* CSS HEX 
+--jet: #353535ff;
+--black: #252422;
+--coffee: #563d28;
+--coffee-claro: #d18445;
+--white: #ffffffff;
+--platinum: #d9d9d9ff;
+--indigo-dye: #284b63ff;*/
+
+*{
+    font-family: 'Philosopher', sans-serif;
+    margin: auto;
+}
+
+/* smooth scrolling behavior */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: white;
+}
+
+/* removes the scrollbar but keeps scrolling feature */
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+.fa-solid{
+    color: white;
+}
+
+i#accountIcon:hover,
+i#cartIcon:hover{
+    transition: 0.1s;
+    color: yellow;
+}
+
+.fa-bag-shopping{
+    color: black;
+}
+
+.container-fluid{
+    text-align: center;
+    width: 100vw;
+}
+
+header#mainBar{
+    width: 100%;
+    position: fixed;
+    z-index:99;
+    background-color: #252422;
+    padding: 10px;
+    height: 10vh;
+}
+
+img#headerLogo{
+    width: 10%;
+}
+
+nav#mainNav{
+    color: white;
+}
+
+ul{
+    float: right;
+    display: inline-flex;
+    list-style-type: none;
+}
+
+li.navItem>a{
+    height: auto;
+    /* padding-left: 20px;
+    padding-right: 20px;  */
+    padding: 20px;   
+    color: white;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+li.navItem>a:hover{
+    transition: 0.1s;
+    font-size: 15px;
+    color: black;
+    background-color: black;
+    border: 2px solid white;
+}
+
+span#mainTitle{
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+    font-size: large;
+}
+
+section#hero{
+    position: relative;
+    height: 300px;
+    width: 80%;
+    margin-top: 50px;
+    background-color: white;
+    color: #353535ff;
+}
+
+section#mainGrid{
+    border-radius: 15px;
+    width: 80vw;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+div.shop-item{
+    margin: auto;
+    background-color: white;
+    border: 1px solid #563d28;
+    padding: 10px;
+
+}
+
+img.itemImg{
+    border-radius: 0px;
+    width: 70%;
+}
+
+h5.itemTitleGrid {
+    color: #563d28;
+}
+
+.footerText{
+    font-family:'Philosopher', sans-serif;
+}
+
+p.breadcrumb{
+    width: 80vw;
+    margin: auto;
+    text-align: left;
+    margin-top: 100px;
+    background-color: rgba(255,255,255,0);
+
+}
+
+span.priceGrid{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+button#coffeeSubBtn{
+    width: 40vw;
+    border: none;
+    padding: 10px;
+    margin: 30px;
+    background-color: #252422;
+    color: white;
+    transition: 0.4s;
+}
+
+button#coffeeSubBtn:hover{
+    transition: 0.4s;
+    font-size: large;
+    color: yellow;
+}
