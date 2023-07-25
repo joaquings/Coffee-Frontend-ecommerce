@@ -1,4 +1,10 @@
+function abrirModal(){
+
+    $("#myModal").modal();
+}
+
 document.addEventListener('DOMContentLoaded', function () {
+
     let galleryItems = document.getElementById('gridView');
 
     let itemList = ['House Blend #1', 'House Blend #2', 'House Blend #3', 'Etiopía', 'Perú', 'Tanzania', 'Guatemala', 'Nicaragua', 'Kenia', 'Honduras'];
@@ -17,15 +23,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let origin = [colombia, brasil, colombia, etiopia, peru, tanzania, guatemala, nicaragua, kenia, honduras];
 
-    for (let i=1; i<10; i++){
-        if (i<4){
-            galleryItems.innerHTML += "<div class='col-sm-4 shop-item'><img src='img/coffee"+[i]+".png' class='itemImg'><h5 class='itemTitleGrid'>"+itemList[i-1] + "&nbsp" + origin[i-1] +"</h5><br><span class='priceGrid'>$"+priceList[i-1]+"</span></div>";
-        }
-        else{
-            galleryItems.innerHTML += "<div class='col-sm-4 shop-item'><img src='img/nostock.png' class='itemImg'><h5 class='itemTitleGrid'>"+ itemList[i-1] + "&nbsp" + origin[i-1] +"</h5><br><span class='priceGrid'>$"+priceList[i-1]+"</span></div>";
-        }
+    for (let i = 1; i < 10; i++) {
+        galleryItems.innerHTML += "<div class='col-sm-4 shop-item' onclick='abrirModal()'><img src='img/coffee" + [i] + ".png' class='itemImg'><h5 class='itemTitleGrid'>" + itemList[i - 1] + "&nbsp" + origin[i - 1] + "</h5><br><span class='priceGrid'>$" + priceList[i - 1] + "</span></div>";
+
     }
 
 })
+
+
+
+
+
 
 // + "&nbsp" + origin[i-1] +

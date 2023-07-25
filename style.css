@@ -60,17 +60,17 @@ img#headerLogo{
 }
 
 nav#mainNav{
+    height: auto;
     color: white;
 }
 
 ul{
     float: right;
-    display: inline-flex;
+    display: flex;
     list-style-type: none;
 }
 
 li.navItem>a{
-    height: auto;
     /* padding-left: 20px;
     padding-right: 20px;  */
     padding: 20px;   
@@ -81,10 +81,7 @@ li.navItem>a{
 
 li.navItem>a:hover{
     transition: 0.1s;
-    font-size: 15px;
-    color: black;
-    background-color: black;
-    border: 2px solid white;
+    background-color:#284b63ff;
 }
 
 span#mainTitle{
@@ -115,6 +112,7 @@ div.shop-item{
     background-color: white;
     border: 1px solid #563d28;
     padding: 10px;
+    cursor: pointer;
 
 }
 

@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- import external html files-->
+    <link href="modal.html" rel="import" />
+
     <title>Shop v1.0</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -34,6 +38,7 @@
             </div>
             <nav id="mainNav" class="col-sm-9">
                 <ul>
+                    <li class="navItem"><a href="#subscription" data-toggle="tooltip" title="Monthly subscription"><i class="fa-solid fa-star-of-life"></i></a></li>
                     <li class="navItem"><a href="#myaccount" data-toggle="tooltip" title="My Account"><i
                                 id="accountIcon" class="fa-solid fa-user"></i></a></li>
                     <li class="navItem"><a href="#cart" data-toggle="tooltip" title="Cart"><i id="cartIcon"
@@ -54,12 +59,51 @@
         <p class="breadcrumb">/ Shop</p>
         <section id="mainGrid" class="row center-block">
             <div id="gridView"></div>
-        </section>
+        </section>      
 
         <section>
             <button id="coffeeSubBtn">COFFEE SUBSCRIPTION</button>
         </section>
 
+        <div class="container">
+           
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+          
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 style="color:red;"><span id="nameCoffee" class="glyphicon glyphicon-lock"></span> Login</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                        <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                        <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" value="" checked>Remember me</label>
+                      </div>
+                      <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <p>Not a member? <a href="#">Sign Up</a></p>
+                    <p>Forgot <a href="#">Password?</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    
         <section id="footer">
             <h6 class="footerText">The Bronx Coffee ® 2023</h6>
         </section>
