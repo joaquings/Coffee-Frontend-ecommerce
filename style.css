@@ -84,10 +84,11 @@ li.navItem>a:hover{
     background-color:#284b63ff;
 }
 
-span#mainTitle{
+#mainTitle{
     color: white;
     font-family: 'Philosopher', sans-serif;
     font-size: large;
+    text-decoration: none;
 }
 
 section#hero{
